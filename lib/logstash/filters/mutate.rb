@@ -258,7 +258,6 @@ class LogStash::Filters::Mutate < LogStash::Filters::Base
     capitalize(event) if @capitalize
     lowercase(event) if @lowercase
     strip(event) if @strip
-    remove(event) if @remove
     split(event) if @split
     join(event) if @join
     merge(event) if @merge
